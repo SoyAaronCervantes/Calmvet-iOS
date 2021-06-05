@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BBD52CE5D3B9504B34F4D6C6 /* Pods_Calm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70AF0149D6AEDB91A3153F05 /* Pods_Calm.framework */; };
+		8003F39694A66D5F4F21928D /* Pods_Calm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D3EF1667A8BFD8AC39945B /* Pods_Calm.framework */; };
 		DA071036266C03AB00F445D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA071035266C03AB00F445D8 /* AppDelegate.swift */; };
 		DA071038266C03AB00F445D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA071037266C03AB00F445D8 /* SceneDelegate.swift */; };
 		DA07103A266C03AB00F445D8 /* CalmvetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA071039266C03AB00F445D8 /* CalmvetView.swift */; };
@@ -16,11 +16,12 @@
 		DA071042266C03AB00F445D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA071040266C03AB00F445D8 /* LaunchScreen.storyboard */; };
 		DA07104B266C03E300F445D8 /* FirebaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07104A266C03E300F445D8 /* FirebaseUIView.swift */; };
 		DA7C7221266C058C00756B45 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA7C7220266C058C00756B45 /* GoogleService-Info.plist */; };
+		DABF3F0F266C07BA0048DBF3 /* CustomLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABF3F0E266C07BA0048DBF3 /* CustomLoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		70AF0149D6AEDB91A3153F05 /* Pods_Calm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		918B0E7AAE763D8B7BD30A19 /* Pods-Calm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calm.debug.xcconfig"; path = "Target Support Files/Pods-Calm/Pods-Calm.debug.xcconfig"; sourceTree = "<group>"; };
+		5AD56892DA8CBE134050BC2D /* Pods-Calm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calm.release.xcconfig"; path = "Target Support Files/Pods-Calm/Pods-Calm.release.xcconfig"; sourceTree = "<group>"; };
+		85D3EF1667A8BFD8AC39945B /* Pods_Calm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA071032266C03AB00F445D8 /* Calm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA071035266C03AB00F445D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA071037266C03AB00F445D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +32,8 @@
 		DA071043266C03AB00F445D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA07104A266C03E300F445D8 /* FirebaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUIView.swift; sourceTree = "<group>"; };
 		DA7C7220266C058C00756B45 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E4E478D91DDA178A89D86EC9 /* Pods-Calm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calm.release.xcconfig"; path = "Target Support Files/Pods-Calm/Pods-Calm.release.xcconfig"; sourceTree = "<group>"; };
+		DABF3F0E266C07BA0048DBF3 /* CustomLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoginView.swift; sourceTree = "<group>"; };
+		E9260E25AA4681AC89747D40 /* Pods-Calm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calm.debug.xcconfig"; path = "Target Support Files/Pods-Calm/Pods-Calm.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,26 +41,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBD52CE5D3B9504B34F4D6C6 /* Pods_Calm.framework in Frameworks */,
+				8003F39694A66D5F4F21928D /* Pods_Calm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F2B319B44A79A2518BB9BE7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				70AF0149D6AEDB91A3153F05 /* Pods_Calm.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		CA0660A2885A072EC625B4FE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				918B0E7AAE763D8B7BD30A19 /* Pods-Calm.debug.xcconfig */,
-				E4E478D91DDA178A89D86EC9 /* Pods-Calm.release.xcconfig */,
+				E9260E25AA4681AC89747D40 /* Pods-Calm.debug.xcconfig */,
+				5AD56892DA8CBE134050BC2D /* Pods-Calm.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -69,7 +63,7 @@
 				DA071034266C03AB00F445D8 /* Calm */,
 				DA071033266C03AB00F445D8 /* Products */,
 				CA0660A2885A072EC625B4FE /* Pods */,
-				0F2B319B44A79A2518BB9BE7 /* Frameworks */,
+				E04EB8970AA8359B18B4E6DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,8 +111,17 @@
 			isa = PBXGroup;
 			children = (
 				DA07104A266C03E300F445D8 /* FirebaseUIView.swift */,
+				DABF3F0E266C07BA0048DBF3 /* CustomLoginView.swift */,
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		E04EB8970AA8359B18B4E6DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85D3EF1667A8BFD8AC39945B /* Pods_Calm.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,12 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA071046266C03AB00F445D8 /* Build configuration list for PBXNativeTarget "Calm" */;
 			buildPhases = (
-				3DBDF929134A23E618467428 /* [CP] Check Pods Manifest.lock */,
+				95F3150BB72FCD20C188DAFB /* [CP] Check Pods Manifest.lock */,
 				DA07102E266C03AB00F445D8 /* Sources */,
 				DA07102F266C03AB00F445D8 /* Frameworks */,
 				DA071030266C03AB00F445D8 /* Resources */,
-				206697C3AE9AA67697E6A485 /* [CP] Embed Pods Frameworks */,
-				21E150D9ACDBC9E6E4335007 /* [CP] Copy Pods Resources */,
+				A187A6FD69EAB5DF5FE52DDF /* [CP] Embed Pods Frameworks */,
+				A1B3496B49BEA61FC0E7E5AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,41 +194,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		206697C3AE9AA67697E6A485 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		21E150D9ACDBC9E6E4335007 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3DBDF929134A23E618467428 /* [CP] Check Pods Manifest.lock */ = {
+		95F3150BB72FCD20C188DAFB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -247,6 +216,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A187A6FD69EAB5DF5FE52DDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1B3496B49BEA61FC0E7E5AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,6 +261,7 @@
 				DA07104B266C03E300F445D8 /* FirebaseUIView.swift in Sources */,
 				DA071038266C03AB00F445D8 /* SceneDelegate.swift in Sources */,
 				DA07103A266C03AB00F445D8 /* CalmvetView.swift in Sources */,
+				DABF3F0F266C07BA0048DBF3 /* CustomLoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +397,7 @@
 		};
 		DA071047266C03AB00F445D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 918B0E7AAE763D8B7BD30A19 /* Pods-Calm.debug.xcconfig */;
+			baseConfigurationReference = E9260E25AA4681AC89747D40 /* Pods-Calm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -415,7 +419,7 @@
 		};
 		DA071048266C03AB00F445D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4E478D91DDA178A89D86EC9 /* Pods-Calm.release.xcconfig */;
+			baseConfigurationReference = 5AD56892DA8CBE134050BC2D /* Pods-Calm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
