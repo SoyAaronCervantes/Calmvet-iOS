@@ -16,6 +16,8 @@ final class PetListViewModel: ObservableObject {
     private var cancellables: Set<AnyCancellable> = []
     
     init() {
+        petRepository = PetRepository()
+
         petRepository.$pets
             .map{ pets in pets.map(PetViewModel.init) }
             .assign(to: \.petsViewModel, on: self)
@@ -23,6 +25,8 @@ final class PetListViewModel: ObservableObject {
     }
     
     init( _ uid: String ) {
+        petRepository = PetRepository(uid)
+
         petRepository.$userPets
             .map{ pets in pets.map(PetViewModel.init) }
             .assign(to: \.userPetsViewModel, on: self)

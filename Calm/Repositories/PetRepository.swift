@@ -37,14 +37,14 @@ final class PetRepository: ObservableObject {
         let collection = FirestoreCollectionsEnum.PETS.rawValue
         store
             .collection( collection )
-            .whereField("createdBy", isEqualTo: uid)
+            .whereField("createdBy", isEqualTo: uid )
             .addSnapshotListener { (snapshot, error) in
-            if error != nil {
-                print( error! )
-                return
+                if let error = error {
+                    print( error )
+                    return
+                }
+                self.userPets = snapshot?.documents.compactMap { try? $0.data(as: Pet.self) } ?? []
             }
-            self.userPets = snapshot?.documents.compactMap { try? $0.data(as: Pet.self) } ?? []
-        }
     }
     
     func add(_ pet: Pet) {

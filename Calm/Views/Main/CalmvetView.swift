@@ -17,7 +17,7 @@ struct CalmvetView: View {
                 PetListView( petListViewModel: PetListViewModel() )
                     .tabItem { Image(systemName: "tortoise.fill") }
                     .tag(1)
-                MyPetListView( petListViewModel: PetListViewModel( user?.uid ?? "" ) )
+                MyPetListView( petListViewModel: PetListViewModel( user!.uid ) )
                     .tabItem { Image(systemName: "heart.fill") }
                     .tag(2)
             }
@@ -56,8 +56,18 @@ private extension CalmvetView {
     @ViewBuilder
     var navigationBarTrailingItems: some View {
         if tabSelection <= 2 {
-            NavigationLink( destination: PetFormView() ) {
-                Image(systemName: "plus.circle")
+            HStack( spacing: 16 ) {
+                NavigationLink( destination: PetFormView() ) {
+                    Image(systemName: "plus.circle")
+                }
+                
+                NavigationLink( destination: FirebaseUIView() ) {
+                    Image(systemName: "square.and.arrow.up")
+                        .onTapGesture {
+                            let _ = try? Auth.auth().signOut()
+                        }
+                }
+
             }
         }
     }
