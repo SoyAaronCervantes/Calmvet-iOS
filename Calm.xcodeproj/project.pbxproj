@@ -14,7 +14,8 @@
 		DA07103F266C03AB00F445D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA07103E266C03AB00F445D8 /* Preview Assets.xcassets */; };
 		DA071042266C03AB00F445D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA071040266C03AB00F445D8 /* LaunchScreen.storyboard */; };
 		DA07104B266C03E300F445D8 /* FirebaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07104A266C03E300F445D8 /* FirebaseUIView.swift */; };
-		DA71CE17266DA02D00BC4C15 /* PetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71CE16266DA02D00BC4C15 /* PetCardView.swift */; };
+		DA2E8CFD266DE09D00D74A31 /* PetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E8CFC266DE09D00D74A31 /* PetViewModel.swift */; };
+		DA71CE17266DA02D00BC4C15 /* PetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71CE16266DA02D00BC4C15 /* PetView.swift */; };
 		DABF3F0F266C07BA0048DBF3 /* CustomLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABF3F0E266C07BA0048DBF3 /* CustomLoginView.swift */; };
 		DABF3F11266C122F0048DBF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DABF3F10266C122F0048DBF3 /* GoogleService-Info.plist */; };
 		DABF3F1D266C25400048DBF3 /* PetFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABF3F16266C25400048DBF3 /* PetFormView.swift */; };
@@ -43,7 +44,8 @@
 		DA071041266C03AB00F445D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA071043266C03AB00F445D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA07104A266C03E300F445D8 /* FirebaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUIView.swift; sourceTree = "<group>"; };
-		DA71CE16266DA02D00BC4C15 /* PetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCardView.swift; sourceTree = "<group>"; };
+		DA2E8CFC266DE09D00D74A31 /* PetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetViewModel.swift; sourceTree = "<group>"; };
+		DA71CE16266DA02D00BC4C15 /* PetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetView.swift; sourceTree = "<group>"; };
 		DABF3F0E266C07BA0048DBF3 /* CustomLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoginView.swift; sourceTree = "<group>"; };
 		DABF3F10266C122F0048DBF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DABF3F16266C25400048DBF3 /* PetFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetFormView.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		DABF3F15266C25400048DBF3 /* Pet */ = {
 			isa = PBXGroup;
 			children = (
+				DA71CE16266DA02D00BC4C15 /* PetView.swift */,
 				DABF3F16266C25400048DBF3 /* PetFormView.swift */,
 			);
 			path = Pet;
@@ -183,7 +186,6 @@
 			children = (
 				DABF3F1B266C25400048DBF3 /* CustomTextEditorView.swift */,
 				DABF3F1C266C25400048DBF3 /* CustomPickerView.swift */,
-				DA71CE16266DA02D00BC4C15 /* PetCardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				DABF3F28266C25600048DBF3 /* PetListViewModel.swift */,
+				DA2E8CFC266DE09D00D74A31 /* PetViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -358,13 +361,14 @@
 				DABF3F21266C25400048DBF3 /* CustomPickerView.swift in Sources */,
 				DABF3F2B266C25600048DBF3 /* PetForm.swift in Sources */,
 				DA07104B266C03E300F445D8 /* FirebaseUIView.swift in Sources */,
+				DA2E8CFD266DE09D00D74A31 /* PetViewModel.swift in Sources */,
 				DABF3F2E266C25600048DBF3 /* PetListViewModel.swift in Sources */,
 				DABF3F20266C25400048DBF3 /* CustomTextEditorView.swift in Sources */,
 				DA071038266C03AB00F445D8 /* SceneDelegate.swift in Sources */,
 				DABF3F2F266C25600048DBF3 /* FirestoreCollectionsEnum.swift in Sources */,
 				DABF3F2D266C25600048DBF3 /* PetRepository.swift in Sources */,
 				DA07103A266C03AB00F445D8 /* CalmvetView.swift in Sources */,
-				DA71CE17266DA02D00BC4C15 /* PetCardView.swift in Sources */,
+				DA71CE17266DA02D00BC4C15 /* PetView.swift in Sources */,
 				DABF3F1F266C25400048DBF3 /* MyPetListView.swift in Sources */,
 				DABF3F1D266C25400048DBF3 /* PetFormView.swift in Sources */,
 				DABF3F2C266C25600048DBF3 /* Pet.swift in Sources */,

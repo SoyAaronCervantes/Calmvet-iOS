@@ -10,10 +10,13 @@ import Firebase
 
 struct PetListView: View {
     @ObservedObject var petListViewModel: PetListViewModel
-    private let user = Auth.auth().currentUser
     var body: some View {
-        List( petListViewModel.pets ) { pet in
-            PetCardView()
+        VStack {
+            List {
+                ForEach( petListViewModel.petsViewModel ) { petViewModel in
+                    PetView( petViewModel: petViewModel )
+                }
+            }
         }
     }
 }
