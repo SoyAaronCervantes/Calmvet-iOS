@@ -6,10 +6,14 @@ target 'Calm' do
   use_frameworks!
 
   # Pods for Calm
-pod 'FirebaseCore', '~> 7.2'
-pod 'FirebaseAuth', '~> 7.2'
-pod 'FirebaseStorage', '~> 7.2'
-pod 'FirebaseUI', '~> 10.0.2'
-pod 'FirebaseFirestore', '~> 7.2'
+pod 'FirebaseCore', '~> 7.11.0'
+pod 'FirebaseAuth', '~> 7.11.0'
+pod 'FirebaseStorage', '~> 7.11.0'
+pod 'FirebaseFirestore', '~> 7.11.0'
 pod 'FirebaseFirestoreSwift', '= 7.9.0-beta' 
+
+pod 'FirebaseUI', '~> 10.0.2'
+
+pod 'FBSDKLoginKit', '~> 9.3.0'
+
 end

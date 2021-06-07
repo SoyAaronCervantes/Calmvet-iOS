@@ -17,30 +17,28 @@ struct CustomLoginView : UIViewControllerRepresentable {
         Coordinator(self)
     }
     
-    func makeUIViewController(context: Context) -> UIViewController
-    {
+    func makeUIViewController(context: Context) -> UIViewController {
+        
         let authUI = FUIAuth.defaultAuthUI()
         
         let providers : [FUIAuthProvider] = [
             FUIEmailAuth(),
             FUIGoogleAuth.init(authUI: authUI!),
+//            FUIFacebookAuth.init(authUI: authUI!),
             FUIOAuth.twitterAuthProvider(),
             FUIOAuth.appleAuthProvider(),
             FUIPhoneAuth.init(authUI: authUI!)
         ]
-
+        
         authUI?.providers = providers
         authUI?.delegate = context.coordinator
         
         let authViewController = authUI?.authViewController()
-
+        
         return authViewController!
     }
     
-    func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<CustomLoginView>)
-    {
-        
-    }
+    func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<CustomLoginView>) { }
     
     //coordinator
     class Coordinator : NSObject, FUIAuthDelegate {

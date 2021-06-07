@@ -381,11 +381,12 @@ PODS:
   - SDWebImage/Core (5.11.1)
 
 DEPENDENCIES:
-  - FirebaseAuth (~> 7.2)
-  - FirebaseCore (~> 7.2)
-  - FirebaseFirestore (~> 7.2)
+  - FBSDKLoginKit (~> 9.3.0)
+  - FirebaseAuth (~> 7.11.0)
+  - FirebaseCore (~> 7.11.0)
+  - FirebaseFirestore (~> 7.11.0)
   - FirebaseFirestoreSwift (= 7.9.0-beta)
-  - FirebaseStorage (~> 7.2)
+  - FirebaseStorage (~> 7.11.0)
   - FirebaseUI (~> 10.0.2)
 
 SPEC REPOS:
@@ -443,6 +444,6 @@ SPEC CHECKSUMS:
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
 
-PODFILE CHECKSUM: 7526d7cefbf9e592bfb821521fda8b11c96214b4
+PODFILE CHECKSUM: 336b9d3d38d4f2e356a6dd0e3961fce51c63afaf
 
 COCOAPODS: 1.10.1
