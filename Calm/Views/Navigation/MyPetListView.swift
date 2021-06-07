@@ -10,9 +10,17 @@ import Firebase
 
 struct MyPetListView: View {
     @ObservedObject var petListViewModel: PetListViewModel
+    private let user = Auth.auth().currentUser
     var body: some View {
-        List( petListViewModel.userPets ) { pet in
-            Text( pet.name )
+        List {
+            ForEach(
+                petListViewModel
+                    .petsViewModel
+                    .filter{ $0.pet.createdBy == user!.uid }
+            ) {
+                petViewModel in PetView( petViewModel: petViewModel )
+                    .frame( maxWidth: .infinity, maxHeight: .infinity, alignment: .center )
+            }
         }
     }
 }

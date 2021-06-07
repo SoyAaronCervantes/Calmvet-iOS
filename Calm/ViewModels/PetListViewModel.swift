@@ -10,24 +10,27 @@ import Combine
 
 final class PetListViewModel: ObservableObject {
     @Published var petRepository = PetRepository()
-    @Published var pets: [Pet] = []
-    @Published var userPets: [Pet] = []
+    @Published var petsViewModel: [PetViewModel] = []
+    @Published var userPetsViewModel: [PetViewModel] = []
     
     private var cancellables: Set<AnyCancellable> = []
     
     init() {
         petRepository.$pets
-            .assign(to: \.pets, on: self)
+            .map{ pets in pets.map(PetViewModel.init) }
+            .assign(to: \.petsViewModel, on: self)
             .store(in: &cancellables)
     }
     
     init( _ uid: String ) {
         petRepository.$userPets
-            .assign(to: \.userPets, on: self)
+            .map{ pets in pets.map(PetViewModel.init) }
+            .assign(to: \.userPetsViewModel, on: self)
             .store(in: &cancellables)
     }
     
     func add( _ pet: Pet ) {
         petRepository.add(pet)
     }
+
 }
