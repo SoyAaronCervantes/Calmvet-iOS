@@ -24,7 +24,7 @@ struct CustomLoginView : UIViewControllerRepresentable {
         let providers : [FUIAuthProvider] = [
             FUIEmailAuth(),
             FUIGoogleAuth.init(authUI: authUI!),
-//            FUIFacebookAuth.init(authUI: authUI!),
+            FUIFacebookAuth.init(authUI: authUI!),
             FUIOAuth.twitterAuthProvider(),
             FUIOAuth.appleAuthProvider(),
             FUIPhoneAuth.init(authUI: authUI!)
