@@ -17,8 +17,9 @@ struct MyPetListView: View {
                 petListViewModel
                     .petsViewModel
                     .filter{ $0.pet.createdBy == user!.uid }
-            ) { petViewModel in
-                PetView( petViewModel: petViewModel )
+            ) {
+                petViewModel in PetView( petViewModel: petViewModel )
+                    .frame( maxWidth: .infinity, maxHeight: .infinity, alignment: .center )
             }
         }
     }

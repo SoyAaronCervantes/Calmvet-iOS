@@ -11,11 +11,10 @@ import Firebase
 struct PetListView: View {
     @ObservedObject var petListViewModel: PetListViewModel
     var body: some View {
-        VStack {
-            List {
-                ForEach( petListViewModel.petsViewModel ) { petViewModel in
-                    PetView( petViewModel: petViewModel )
-                }
+        List {
+            ForEach( petListViewModel.petsViewModel ) { petViewModel in
+                PetView( petViewModel: petViewModel )
+                    .frame( maxWidth: .infinity, maxHeight: .infinity, alignment: .center )
             }
         }
     }

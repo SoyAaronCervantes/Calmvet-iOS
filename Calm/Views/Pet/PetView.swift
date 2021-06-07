@@ -14,28 +14,31 @@ struct PetView: View {
             .fill( Color.white )
             .frame( height: 350 )
             .overlay(
-                VStack {
-
+                VStack( alignment: .leading ) {
+                    
                     Image( systemName: "tortoise.fill" )
+                        .resizable()
+                        .scaledToFit()
+                        .frame( width: 344, height: 194, alignment: .center )
                         .foregroundColor(.green)
-                        .frame( height: 194 )
-
+                        .padding(.bottom, 16)
+                    
                     Text( petViewModel.pet.name )
-                        .frame( alignment: .leading )
-                        .font(.title)
+                        .font(.title3 )
                         .foregroundColor( Color.black )
-
+                    
                     Text( "Edad: \( petViewModel.pet.age )" )
-                        .frame( alignment: .leading )
                         .font(.headline)
                         .foregroundColor( Color.black )
-
+                        .padding(.vertical, 8)
+                    
                     Text( petViewModel.pet.description )
-                        .frame( alignment: .leading )
                         .font(.body)
                         .foregroundColor( Color.black )
+                        .lineLimit(4)
                 }
-                .padding(16)
+                .padding(32)
+                .frame( maxWidth: .infinity, maxHeight: .infinity, alignment: .center )
             )
     }
 }
