@@ -13,7 +13,7 @@ struct PetListView: View {
     private let user = Auth.auth().currentUser
     var body: some View {
         List( petListViewModel.pets ) { pet in
-            Text( pet.name )
+            PetCardView()
         }
     }
 }

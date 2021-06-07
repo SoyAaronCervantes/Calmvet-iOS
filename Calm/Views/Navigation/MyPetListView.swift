@@ -12,7 +12,7 @@ struct MyPetListView: View {
     @ObservedObject var petListViewModel: PetListViewModel
     var body: some View {
         List( petListViewModel.userPets ) { pet in
-            Text( pet.name )
+            PetCardView() 
         }
     }
 }

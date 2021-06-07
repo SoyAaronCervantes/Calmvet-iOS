@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EE462E46AAA0498FC840F24 /* Pods_Calm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64B996980DA985330FAFFD9 /* Pods_Calm.framework */; };
 		DA071036266C03AB00F445D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA071035266C03AB00F445D8 /* AppDelegate.swift */; };
 		DA071038266C03AB00F445D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA071037266C03AB00F445D8 /* SceneDelegate.swift */; };
 		DA07103A266C03AB00F445D8 /* CalmvetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA071039266C03AB00F445D8 /* CalmvetView.swift */; };
@@ -15,6 +14,7 @@
 		DA07103F266C03AB00F445D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA07103E266C03AB00F445D8 /* Preview Assets.xcassets */; };
 		DA071042266C03AB00F445D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA071040266C03AB00F445D8 /* LaunchScreen.storyboard */; };
 		DA07104B266C03E300F445D8 /* FirebaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07104A266C03E300F445D8 /* FirebaseUIView.swift */; };
+		DA71CE17266DA02D00BC4C15 /* PetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71CE16266DA02D00BC4C15 /* PetCardView.swift */; };
 		DABF3F0F266C07BA0048DBF3 /* CustomLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABF3F0E266C07BA0048DBF3 /* CustomLoginView.swift */; };
 		DABF3F11266C122F0048DBF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DABF3F10266C122F0048DBF3 /* GoogleService-Info.plist */; };
 		DABF3F1D266C25400048DBF3 /* PetFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABF3F16266C25400048DBF3 /* PetFormView.swift */; };
@@ -27,12 +27,13 @@
 		DABF3F2D266C25600048DBF3 /* PetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABF3F26266C25600048DBF3 /* PetRepository.swift */; };
 		DABF3F2E266C25600048DBF3 /* PetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABF3F28266C25600048DBF3 /* PetListViewModel.swift */; };
 		DABF3F2F266C25600048DBF3 /* FirestoreCollectionsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABF3F2A266C25600048DBF3 /* FirestoreCollectionsEnum.swift */; };
+		F815053758C9073DDA641A7F /* Pods_Calm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1851B07F7C5789E28735ADCD /* Pods_Calm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		217E666D172D136924A26B97 /* Pods-Calm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calm.release.xcconfig"; path = "Target Support Files/Pods-Calm/Pods-Calm.release.xcconfig"; sourceTree = "<group>"; };
-		54AC41FBE7FE9C1E43AC93A8 /* Pods-Calm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calm.debug.xcconfig"; path = "Target Support Files/Pods-Calm/Pods-Calm.debug.xcconfig"; sourceTree = "<group>"; };
-		A64B996980DA985330FAFFD9 /* Pods_Calm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1851B07F7C5789E28735ADCD /* Pods_Calm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B059BA77CEE0F2E0990513B /* Pods-Calm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calm.release.xcconfig"; path = "Target Support Files/Pods-Calm/Pods-Calm.release.xcconfig"; sourceTree = "<group>"; };
+		C5EA40604B395E1BCEC3F6F5 /* Pods-Calm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calm.debug.xcconfig"; path = "Target Support Files/Pods-Calm/Pods-Calm.debug.xcconfig"; sourceTree = "<group>"; };
 		DA071032266C03AB00F445D8 /* Calm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA071035266C03AB00F445D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA071037266C03AB00F445D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		DA071041266C03AB00F445D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA071043266C03AB00F445D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA07104A266C03E300F445D8 /* FirebaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUIView.swift; sourceTree = "<group>"; };
+		DA71CE16266DA02D00BC4C15 /* PetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCardView.swift; sourceTree = "<group>"; };
 		DABF3F0E266C07BA0048DBF3 /* CustomLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoginView.swift; sourceTree = "<group>"; };
 		DABF3F10266C122F0048DBF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DABF3F16266C25400048DBF3 /* PetFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetFormView.swift; sourceTree = "<group>"; };
@@ -61,17 +63,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EE462E46AAA0498FC840F24 /* Pods_Calm.framework in Frameworks */,
+				F815053758C9073DDA641A7F /* Pods_Calm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3BB51B830A4D22AF52A492F7 /* Frameworks */ = {
+		7C607A5C7F13C0DC8D5B0B5B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A64B996980DA985330FAFFD9 /* Pods_Calm.framework */,
+				1851B07F7C5789E28735ADCD /* Pods_Calm.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -79,8 +81,8 @@
 		CA0660A2885A072EC625B4FE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				54AC41FBE7FE9C1E43AC93A8 /* Pods-Calm.debug.xcconfig */,
-				217E666D172D136924A26B97 /* Pods-Calm.release.xcconfig */,
+				C5EA40604B395E1BCEC3F6F5 /* Pods-Calm.debug.xcconfig */,
+				7B059BA77CEE0F2E0990513B /* Pods-Calm.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -91,7 +93,7 @@
 				DA071034266C03AB00F445D8 /* Calm */,
 				DA071033266C03AB00F445D8 /* Products */,
 				CA0660A2885A072EC625B4FE /* Pods */,
-				3BB51B830A4D22AF52A492F7 /* Frameworks */,
+				7C607A5C7F13C0DC8D5B0B5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,6 +183,7 @@
 			children = (
 				DABF3F1B266C25400048DBF3 /* CustomTextEditorView.swift */,
 				DABF3F1C266C25400048DBF3 /* CustomPickerView.swift */,
+				DA71CE16266DA02D00BC4C15 /* PetCardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -225,12 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA071046266C03AB00F445D8 /* Build configuration list for PBXNativeTarget "Calm" */;
 			buildPhases = (
-				C1AB5627A7FA9C364FD50DBA /* [CP] Check Pods Manifest.lock */,
+				7730E4B9CE7F9D005500E122 /* [CP] Check Pods Manifest.lock */,
 				DA07102E266C03AB00F445D8 /* Sources */,
 				DA07102F266C03AB00F445D8 /* Frameworks */,
 				DA071030266C03AB00F445D8 /* Resources */,
-				9330C66AA26726CD29F9C565 /* [CP] Embed Pods Frameworks */,
-				F8E46ABA71E5FFC97736A704 /* [CP] Copy Pods Resources */,
+				F9B3F9186B37FC7C352DBCD6 /* [CP] Embed Pods Frameworks */,
+				704E86EBD0496855EBA800A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -288,24 +291,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9330C66AA26726CD29F9C565 /* [CP] Embed Pods Frameworks */ = {
+		704E86EBD0496855EBA800A0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C1AB5627A7FA9C364FD50DBA /* [CP] Check Pods Manifest.lock */ = {
+		7730E4B9CE7F9D005500E122 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -327,21 +330,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F8E46ABA71E5FFC97736A704 /* [CP] Copy Pods Resources */ = {
+		F9B3F9186B37FC7C352DBCD6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Calm/Pods-Calm-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -361,6 +364,7 @@
 				DABF3F2F266C25600048DBF3 /* FirestoreCollectionsEnum.swift in Sources */,
 				DABF3F2D266C25600048DBF3 /* PetRepository.swift in Sources */,
 				DA07103A266C03AB00F445D8 /* CalmvetView.swift in Sources */,
+				DA71CE17266DA02D00BC4C15 /* PetCardView.swift in Sources */,
 				DABF3F1F266C25400048DBF3 /* MyPetListView.swift in Sources */,
 				DABF3F1D266C25400048DBF3 /* PetFormView.swift in Sources */,
 				DABF3F2C266C25600048DBF3 /* Pet.swift in Sources */,
@@ -501,7 +505,7 @@
 		};
 		DA071047266C03AB00F445D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54AC41FBE7FE9C1E43AC93A8 /* Pods-Calm.debug.xcconfig */;
+			baseConfigurationReference = C5EA40604B395E1BCEC3F6F5 /* Pods-Calm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -523,7 +527,7 @@
 		};
 		DA071048266C03AB00F445D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 217E666D172D136924A26B97 /* Pods-Calm.release.xcconfig */;
+			baseConfigurationReference = 7B059BA77CEE0F2E0990513B /* Pods-Calm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
