@@ -63,10 +63,11 @@ private extension CalmvetView {
                 
                 NavigationLink( destination: FirebaseUIView() ) {
                     Image(systemName: "square.and.arrow.up")
-                        .onTapGesture {
-                            let _ = try? Auth.auth().signOut()
-                        }
                 }
+                .onTapGesture {
+                    let _ = try? Auth.auth().signOut()
+                }
+                
 
             }
         }
